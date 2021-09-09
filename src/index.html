@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>codejam-canvas</title>
+  <script src="https://unpkg.com/netlify-auth-providers"></script>
+</head>
+<body>
+  <header class="header">
+    <div id="nameProject">Piskel</div>
+    <!-- <div id="login-github"><img src="assets/img/github.png" alt="github"></div> -->
+    <p id="output"></p>
+    <div id="user-login"></div>
+    <div id="user-avatar"></div>
+  </header>
+  <div class="body">
+    <div class="side-panel">
+      <section id="toolbar">
+				<section id="size-pen">
+					<div class="border  border-pen-size-1px"><div id="pen-size-1px"></div></div>
+					<div class="border border-pen-size-2px"><div id="pen-size-2px"></div></div>
+					<div class="border border-pen-size-3px"><div id="pen-size-3px"></div></div>
+					<div class="border border-pen-size-4px"><div id="pen-size-4px"></div></div>
+				</section>
+				<section id="tools">
+					<div class="pencil style-tools"><img src="assets/img/pen.png" alt="move"></div>
+					<div class="strokeTool style-tools"><img src="assets/img/strokeTool.png" alt="move"></div>
+					<div class="paint-bucket style-tools"><img src="assets/img/fillBucket.png" alt="paint_bucket"></div>
+					<div class="paint-of-the-same-color style-tools"><img src="assets/img/paintOfTheSameColor.png" alt="move"></div>
+					<div class="clearTools style-tools"><img src="assets/img/eraser.png" alt="move"></div>
+					<div class="choose-color style-tools"><img src="assets/img/colorPicker.png" alt="choose_color"></div>
+				</section>
+				<section id="panel-color">
+					<input class="margin_color-tools current-color" type="color" name="input" id="input">
+					<input class="margin_color-tools prev-color" type="color" name="input_prev" id="input_prev">
+				</section>
+				<section>
+					<img id="keyboard" src="assets/img/keyboard.png" alt="keyboard">
+				</section>
+			</section>
+			<section id="side-panel-frame">
+				<div id='canvasBlockMini-1'>
+					<canvas width="32" height="32" class="canvasMiniStyle" id='canvas-mini-1'></canvas>
+					<!-- <img id="backgroundMiniCanvas" src="assets/img/fonemini.jpg" alt="background"> -->
+					<div id="newFrame">
+						<div id="side-panel-number">1</div>
+					</div>
+				</div>
+					<div id="addFrame">
+						<img id="plus" src="assets/img/plus.png" alt="background">
+						<span>Add new frame</span>
+					</div>
+			</section>
+    </div>
+    <div class="canvas-block">
+			<div id="canvas-block-area-1" class="canvas-block-area-style">
+				<img id="backgroundCanvas" src="assets/img/fone.jpg" alt="background">
+				<canvas width="32" height="32" class="canvasMainsStyle" id='canvas-1'></canvas>
+			</div>
+		</div>
+		<div class="side-panel-right">
+			<div id="canvas-preview">
+				<img id="backgroundCanvasPreview" src="assets/img/fone.jpg" alt="background">
+				<canvas width="32" height="32" class="canvasRightStyle" id='canvas-right'></canvas>
+			</div>
+			<section class="size-canvas">
+				<div id="32X32" class="size-canvas-elements">32x32</div>
+				<div id="64X64" class="size-canvas-elements ">64x64</div>
+				<div id="128X128" class="size-canvas-elements">128x128</div>
+			</section>
+			<div class="clear">
+				<button value="download" id="downloadGif">download Gif</button>
+				<button value="download" id="downloadApng">download Apng</button>
+			</div>
+		</div>
+	</div>
+	<div id="keyboardWindow">
+		<div id="nameKeyboardWindow">Keyboard shortcuts</div>
+		<div id="closeKeyboardWindow">X</div>
+		<div id="keyboardWindowKey">
+			<div id="Tool shortcuts">
+				P - Pen tool <br>
+				C - Color picker <br>
+				B - Paint bucket tool <br>
+				E - Eraser pen tool <br>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+
